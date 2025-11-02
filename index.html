@@ -60,9 +60,12 @@
         <h4 class="card-title mb-3">Todo List</h4>
 
         <!-- Input -->
-        <div class="d-flex gap-2 mb-3">
-          <input id="nuevaTarea" type="text" class="form-control" placeholder="Nueva tarea">
-          <button id="btnAgregar" class="btn btn-success">Agregar</button>
+        <div class="d-flex gap-2 mb-1" role="form" aria-label="Agregar tarea">
+          <input id="nuevaTarea" type="text" class="form-control" placeholder="Nueva tarea" aria-label="Nueva tarea">
+          <button id="btnAgregar" class="btn btn-success" aria-label="Agregar tarea">Agregar</button>
+        </div>
+        <div>
+          <small id="error" class="text-danger visually-hidden" aria-live="polite"></small>
         </div>
 
         <!-- Resumen -->
